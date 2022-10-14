@@ -622,7 +622,7 @@ header.active{
         padding:1.5rem;
     }
 
-    .home .content h3{
+    .home .row .content h3{
         font-size: 5rem;
     }
 
@@ -646,11 +646,11 @@ header.active{
         transform: translateY(-12.5rem);
     }
 
-    .home .content{
+    .home .row .content{
         text-align: center;
     }
 
-    .home .image img{
+    .home .row .image img{
         width: 100%;
     }
 
