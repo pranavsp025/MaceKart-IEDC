@@ -295,7 +295,7 @@ header.active{
 }
 
 .category .box-container .box{
-    height: 5%;
+   
     flex:1 1 20rem;
     border-radius: 10%;
     position: relative;
