@@ -282,7 +282,7 @@ header.active{
 
 .home .row .count-down span{
     color:var(--light-color);
-    font-size: 1.5rem;
+    font-size: 4rem;
 }
 .home .row .content .text .span{
     color:var(--orange);
