@@ -265,16 +265,16 @@ header.active{
 
 .category .box-container{
     display: flex;
-    gap:15rem;
+    gap:1rem;
 }
 
 .category .box-container .box{
     height: 5%;
-    
     flex:1 1 20rem;
     border-radius: 10%;
     position: relative;
     overflow:hidden;
+    
 }
 
 .category .box-container .box img{
