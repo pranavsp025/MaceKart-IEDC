@@ -231,36 +231,62 @@ header.active{
     color: var(--orange);
 }
 
-.home{
-    min-height: 90vh;
+.home .row{
     display: flex;
     align-items: center;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     gap:1.5rem;
-}
-
-.home .content{
-    flex:1 1 40rem;
-}
-
-.home .image{
-    flex:1 1 40rem;
     text-align: center;
+    border:.1rem solid var(--light-color);
+    background:var(--white-color);
+    border-radius: .5rem;
+    padding:1rem;
 }
 
-.home .image img{
-    width:30vw;
+.home .row .content{
+    flex:1 1 40rem;
+    padding:1rem;
 }
 
-.home .content span{
+.home .row .image{
+    flex:1 1 40rem;
+    padding:2rem;
+}
+
+.home .row .image img{
+    width:100%;
+}
+
+.home .row .discount{
+    font-size: 2rem;
     color:var(--orange);
-    font-size: 3rem;
 }
 
-.home .content h3{
+.home .row .text{
+    font-size: 4rem;
     color:var(--black-color);
-    font-size: 8rem;
-    text-transform: uppercase;
+    padding:.5rem 0;
+}
+
+.home .row .count-down{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+    padding:.5rem 0;
+}
+
+.home .row .count-down h3{
+    color:var(--orange);
+    font-size: 4rem;
+}
+
+.home .row .count-down span{
+    color:var(--light-color);
+    font-size: 1.5rem;
+}
+.home .row .content .text .span{
+    color:var(--orange);
+    font-size: 4rem;
 }
 
 .category .box-container{
@@ -488,6 +514,10 @@ header.active{
 .deal .row .count-down span{
     color:var(--light-color);
     font-size: 1.5rem;
+}
+.deal .row .content .text .span{
+    color:var(--orange);
+    font-size: 4rem;
 }
 
 .new .new-slider .slide{
