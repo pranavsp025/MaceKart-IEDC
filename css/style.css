@@ -648,29 +648,32 @@ header.active{
         position: relative;
     }
 }
-@media (max-width:540px){
-    body{
-        overflow-x: hidden;
-        position: relative;
-    }
-}@media (max-width:720px){
-    body{
-        overflow-x: hidden;
-        position: relative;
-    }
-}@media (max-width:960px){
-    body{
-        overflow-x: hidden;
-        position: relative;
-    }
-}@media (max-width:1140px){
-    body{
-        overflow-x: hidden;
-        position: relative;
-    }
-}@media (max-width:1320px){
-    body{
-        overflow-x: hidden;
-        position: relative;
-    }
-}
+
+@media (min-width: 576px) { body{
+    overflow-x: hidden;
+    position: relative;
+} }
+
+
+@media (min-width: 768px) { body{
+    overflow-x: hidden;
+    position: relative;
+} }
+
+
+@media (min-width: 992px) { body{
+    overflow-x: hidden;
+    position: relative;
+} }
+
+
+@media (min-width: 1200px) { body{
+    overflow-x: hidden;
+    position: relative;
+} }
+
+
+@media (min-width: 1400px) { body{
+    overflow-x: hidden;
+    position: relative;
+} }
