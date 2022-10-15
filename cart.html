@@ -55,7 +55,7 @@
 
     <div id="myForm" class="contact">
       
-      <form class="s" action="" name="order_details">
+      <form class="s" action="cart.html" method="get" name="order_details">
         <h1><center>contact details</center> </h1>
         <div class="form-group">
           <label for="name"><h2>name</h2></label>
@@ -120,9 +120,12 @@
         }
         if (allAreFilled){
           alert('Your order has been placed')
-          setTimeout("location.reload(true);",100);
+          window.location = "index.html"
         }
       };
     </script>
+    <script src="js/order.js"></script>
+
+
   </body>
 </html>
