@@ -1,136 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MaceKart</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/cart.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img class="li" src="images/home-img.png" alt=""
+      /></a>
+      <a href="index.html" class="logo">MaceKart<span>.</span></a>
 
-</head>
-<body>
-    
-<header>
-    <a href="index.html"><img class="li" src="images/home-img.png" alt=""></a>
-    <a href="index.html" class="logo">MaceKart<span>.</span></a>
-
-    <form action="">
-        <input type="search" id="search-bar">
+      <form action="">
+        <input type="search" id="search-bar" />
         <label for="search-bar" class="fas fa-search"></label>
-    </form>
+      </form>
 
-    <div class="icons">
+      <div class="icons">
         <div id="menu-bar" class="fas fa-bars"></div>
         <div id="theme-toggler" class="fas fa-moon"></div>
         <a href="cart.html" class="fas fa-shopping-cart"></a>
         <a href="user.html" class="fas fa-user"></a>
-    </div>
+      </div>
+    </header>
 
-</header>
+    <nav class="navbar">
+      <div class="user">
+        <a href="user.html"><img src="images/user-img.png" alt="" /></a>
+        <a href="user.html"><h3>user-name</h3></a>
+      </div>
 
-
-<nav class="navbar">
-
-    <div class="user">
-        <a href="user.html"><img src="images/user-img.png" alt=""></a> 
-        <a href="user.html"><h3>user-name</h3></a> 
-    </div>
-
-    <div class="links">
+      <div class="links">
         <a href="index.html#home">events</a>
         <a href="index.html#products">crafts</a>
         <a href="index.html#featured">iot kits</a>
         <a href="index.html#deal">deal</a>
         <a href="index.html#new">takshak merchandise</a>
-    </div>
+      </div>
 
-    <div id="close" class="fas fa-times"></div>
+      <div id="close" class="fas fa-times"></div>
+    </nav>
 
-</nav>
-
-<div class="contact">
-    <h1>contact  details</h1>
-    <form action="" name="order_details">
+    <div class="contact">
+      <h1><center>contact details</center> </h1>
+      <form class="s" action="" name="order_details">
         <div class="form-group">
-            <label for="name">name</label>
-            <input type="text"  name="name" id="name">
+          <label for="name">name</label>
+          <input type="text" name="name" id="name" />
         </div>
         <div class="form-group">
-            <label for="email">email</label>
-            <input type="email"  name="email" id="email">
+          <label for="email">email</label>
+          <input type="email" name="email" id="email" />
         </div>
         <div class="form-group">
-            <label for="phone">phone</label>
-            <input type="number"  name="phone" id=phone">
+          <label for="phone">phone</label>
+          <input type="number" name="phone" id=phone">
         </div>
         <div class="form-group">
-            <label for="hostel">hostel</label>
-            <input type="text"  name="hostel" id="hostel">
+          <label for="hostel">hostel</label>
+          <input type="text" name="hostel" id="hostel" />
         </div>
         <div class="form-group">
-            <label for="class">class</label>
-            <input type="text"  name="class" id="class">
+          <label for="class">class</label>
+          <input type="text" name="class" id="class" />
         </div>
         <button type="submit" class="btn-submit">submit</button>
-    </form>
-
-
-</div>
-
-<section class="footer">
-
-    <div class="footer-container">
-    
-        <div class="box-container">
-    
-            <div class="box">
-                <h3>navbar</h3>
-                <a href="#">home</a>
-                <a href="#">products</a>
-                <a href="#">featured</a>
-                <a href="#">deal</a>
-                <a href="#">new</a>
-            </div>
-    
-            <div class="box">
-                <h3>user</h3>
-                <a href="#">my account</a>
-                <a href="#">my favorite</a>
-                <a href="#">my order</a>
-                <a href="#">my cart</a>
-            </div>
-    
-    
-    
-            <div class="box">
-                <h3>contact us</h3>
-                <a href="#">0000000000</a>
-                <a href="#">qwe@gmail.com</a>
-                <a href="#">iedc,mac</a>
-                <img src="images/payment.png" alt="">
-            </div>
-    
-        </div>
-    
+      </form>
     </div>
-    
-    </section>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<script src="js/script.js"></script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbw_YKLJDg-mPv_8ASMfmskRP3Gu9vL4NM8UFxd6COf-5lGuARgPLkpTmb64E-X2gl63/exec'
-    const form = document.forms['order_details']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-</body>
+    <section class="footer">
+      <div class="footer-container">
+        <div class="box-container">
+          <div class="box">
+            <h3>navbar</h3>
+            <a href="#">home</a>
+            <a href="#">products</a>
+            <a href="#">featured</a>
+            <a href="#">deal</a>
+            <a href="#">new</a>
+          </div>
+
+          <div class="box">
+            <h3>user</h3>
+            <a href="#">my account</a>
+            <a href="#">my favorite</a>
+            <a href="#">my order</a>
+            <a href="#">my cart</a>
+          </div>
+
+          <div class="box">
+            <h3>contact us</h3>
+            <a href="#">0000000000</a>
+            <a href="#">qwe@gmail.com</a>
+            <a href="#">iedc,mac</a>
+            <img src="images/payment.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw_YKLJDg-mPv_8ASMfmskRP3Gu9vL4NM8UFxd6COf-5lGuARgPLkpTmb64E-X2gl63/exec";
+      const form = document.forms["order_details"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
