@@ -13,7 +13,6 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
     transition:.2s linear;
 }
 
@@ -296,6 +295,8 @@ header.active{
 .contact .s button[type="submit"].hover{
     background: #ffc400ec;
 }
+
+
 
 
 @media (max-width:991px){

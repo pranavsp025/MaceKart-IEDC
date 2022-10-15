@@ -53,31 +53,34 @@
       <div id="close" class="fas fa-times"></div>
     </nav>
 
-    <div class="contact">
+    <div id="myForm" class="contact">
       
       <form class="s" action="" name="order_details">
         <h1><center>contact details</center> </h1>
         <div class="form-group">
           <label for="name"><h2>name</h2></label>
-          <input type="text" name="name" id="name" />
+          <input type="text" required name="name" id="name" />
         </div>
         <div class="form-group">
           <label for="email"><h2>email</h2></label>
-          <input type="email" name="email" id="email" />
+          <input type="email" required name="email" id="email" />
         </div>
         <div class="form-group">
           <label for="phone"><h2>phone</h2></label>
-          <input type="tel" name="phone" id=phone">
+          <input type="tel" required name="phone" id=phone">
         </div>
         <div class="form-group">
           <label for="hostel"><h2>hostel</h2></label>
-          <input type="text" name="hostel" id="hostel" />
+          <input type="text" required name="hostel" id="hostel" />
         </div>
         <div class="form-group">
           <label for="class"><h2>class</h2></label>
-          <input type="text" name="class" id="class" />
+          <input type="text" required name="class" id="class" />
         </div>
-        <button type="submit" class="btn-submit">submit</button>
+        
+        <button id="check" type="submit" class="btn-submit" >submit</button>
+        
+        </div>
       </form>
     </div>
 
@@ -96,6 +99,27 @@
           .then((response) => console.log("Success!", response))
           .catch((error) => console.error("Error!", error.message));
       });
+    </script>
+    <script>
+      document.getElementById("check").onclick = function() {
+        let allAreFilled = true;
+        document.getElementById("myForm").querySelectorAll("[required]").forEach(function(i) {
+          if (!allAreFilled) return;
+          if (i.type === "radio") {
+            let radioValueCheck = false;
+      document.getElementById("myForm").querySelectorAll(`[name=${i.name}]`).forEach(function(r) {
+              if (r.checked) radioValueCheck = true;
+            })
+            allAreFilled = radioValueCheck;
+            return;
+          }
+          if (!i.value) { allAreFilled = false;  return; }
+        })
+        if (!allAreFilled) {
+          alert('Fill all the fields');
+        }
+        if (allAreFilled){setTimeout("location.reload(true);",1500);}
+      };
     </script>
   </body>
 </html>
