@@ -51,7 +51,34 @@
 
 </nav>
 
-<center><iframe width="1000" height="1000" src="https://www.yepdesk.com/embed/open-register/633b2ea746e0fb0001382d4c/nrhavtm809"></iframe></center>
+<div class="contact">
+    <h1>contact  details</h1>
+    <form action="" name="order_details">
+        <div class="form-group">
+            <label for="name">name</label>
+            <input type="text"  name="name" id="name">
+        </div>
+        <div class="form-group">
+            <label for="email">email</label>
+            <input type="email"  name="email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="phone">phone</label>
+            <input type="number"  name="phone" id=phone">
+        </div>
+        <div class="form-group">
+            <label for="hostel">hostel</label>
+            <input type="text"  name="hostel" id="hostel">
+        </div>
+        <div class="form-group">
+            <label for="class">class</label>
+            <input type="text"  name="class" id="class">
+        </div>
+        <button type="submit" class="btn-submit">submit</button>
+    </form>
+
+
+</div>
 
 <section class="footer">
 
@@ -94,6 +121,16 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script src="js/script.js"></script>
-
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw_YKLJDg-mPv_8ASMfmskRP3Gu9vL4NM8UFxd6COf-5lGuARgPLkpTmb64E-X2gl63/exec'
+    const form = document.forms['order_details']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
