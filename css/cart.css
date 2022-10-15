@@ -288,9 +288,66 @@ header.active{
 
 .contact h1 {
     font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    
 }
 .contact h2 {
-    font-size: 25px;
+    
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.contact .s {
+    width: 600px;
+    padding: 30px;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(50, 48, 48);
+    text-align: center;
+    border-radius: 3rem;
+    
+}
+.contact .s input[type="text"],.contact .s input[type="email"],.contact .s input[type="tel"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0367fd;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+}
+.contact .s input[type="text"]:focus,.contact .s input[type="email"]:focus,.contact .s input[type="tel"]:focus
+{
+    width: 240px;
+    border-color: #ffc400ec;
+}
+.contact .s button[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #ffc400ec;
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+}
+.contact .s button[type="submit"].hover{
+    background: #ffc400ec;
 }
 
 
