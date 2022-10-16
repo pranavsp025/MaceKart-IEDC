@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaceKart</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img class="li" src="images/home-img.png" alt=""
+      /></a>
+      <a href="index.html" class="logo">MaceKart<span>.</span></a>
+
+      <form action="">
+        <input type="search" id="search-bar" />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+
+      <div class="icons">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <div id="theme-toggler" class="fas fa-moon"></div>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+        <a href="user.html" class="fas fa-user"></a>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div class="user">
+        <a href="user.html"><img src="images/user-img.png" alt="" /></a>
+        <a href="user.html"><h3>user-name</h3></a>
+      </div>
+
+      <div class="links">
+        <a href="index.html#home">events</a>
+        <a href="index.html#products">crafts</a>
+        <a href="index.html#featured">iot kits</a>
+        <a href="index.html#deal">deal</a>
+        <a href="index.html#new">takshak merchandise</a>
+      </div>
+
+      <div id="close" class="fas fa-times"></div>
+    </nav><br>
+
+    <div id="myForm" class="contact">
+      
+      <form class="s" action="cart.html" method="get" name="order_details">
+        <h1><center>order details</center> </h1>
+        <div class="form-group">
+          <label for="product"><h2>product</h2></label>
+          <input type="text" readonly required value="Customised Bows" name="product" id="product" />
+        </div>
+        <div class="form-group">
+          <label for="name"><h2>name</h2></label>
+          <input type="text" required name="name" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="email"><h2>email</h2></label>
+          <input type="email" required name="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="phone"><h2>phone</h2></label>
+          <input type="tel" required name="phone" id=phone" />
+        </div>
+        <div class="form-group">
+          <label for="hostel"><h2>hostel</h2></label>
+          <input type="text" required name="hostel" id="hostel" />
+        </div>
+        <div class="form-group">
+          <label for="class"><h2>class</h2></label>
+          <input type="text" required name="class" id="class" />
+        </div>
+        
+        <button id="check" type="submit" class="btn-submit" >submit</button>
+        
+        </div>
+      </form>
+    </div>
+
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw_YKLJDg-mPv_8ASMfmskRP3Gu9vL4NM8UFxd6COf-5lGuARgPLkpTmb64E-X2gl63/exec";
+      const form = document.forms["order_details"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      document.getElementById("check").onclick = function() {
+        let allAreFilled = true;
+        document.getElementById("myForm").querySelectorAll("[required]").forEach(function(i) {
+          if (!allAreFilled) return;
+          if (i.type === "radio") {
+            let radioValueCheck = false;
+      document.getElementById("myForm").querySelectorAll(`[name=${i.name}]`).forEach(function(r) {
+              if (r.checked) radioValueCheck = true;
+            })
+            allAreFilled = radioValueCheck;
+            return;
+          }
+          if (!i.value) { allAreFilled = false;  return; }
+        })
+        if (!allAreFilled) {
+          alert('Fill all the fields');
+        }
+        if (allAreFilled){
+          alert('Your order has been placed')
+          window.location = "index.html"
+        }
+      };
+    </script>
+    <script src="js/order.js"></script>
+
+
+  </body>
+</html>
