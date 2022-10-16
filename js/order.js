@@ -1,11 +1,10 @@
-
-function myFunction() {
+function passvalues() {
     
-    var x = document.getElementById('s').value
-
-    window.location = "cart.html"
-    
-    document.getElementById("name").value = x;
+    const x = "psd;"
+    localStorage.setItem("ival",x);
+   window.location="cart.html";
 }
 
 
+
+document.getElementById("name").innerHTML=localStorage.getItem("ival");
