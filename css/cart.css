@@ -247,10 +247,10 @@ header.active{
     font-weight: 700;
 }
 .contact .s {
-    width: 600px;
+    width: 500px;
     padding: 30px;
     position: fixed;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background: rgb(50, 48, 48);
