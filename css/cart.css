@@ -302,7 +302,7 @@ header.active{
 @media (max-width:991px){
     body{
         overflow-x: hidden;
-        position: relative;
+        
     }
     html{
         font-size: 55%;
@@ -325,7 +325,7 @@ header.active{
 @media (max-width:768px){
     body{
         overflow-x: hidden;
-        position: relative;
+        
     }
     header{
         flex-flow: column;
@@ -353,7 +353,7 @@ header.active{
 @media (max-width:450px){
     body{
         overflow-x: hidden;
-        position: relative;
+        
     }
     html{
         font-size: 50%;
@@ -369,35 +369,35 @@ header.active{
 @media (max-width:390px){
     body{
         overflow-x: hidden;
-        position: relative;
+        
     }
 }
 
 @media (min-width: 576px) { body{
     overflow-x: hidden;
-    position: relative;
+    
 } }
 
 
 @media (min-width: 768px) { body{
     overflow-x: hidden;
-    position: relative;
+    
 } }
 
 
 @media (min-width: 992px) { body{
     overflow-x: hidden;
-    position: relative;
+    
 } }
 
 
 @media (min-width: 1200px) { body{
     overflow-x: hidden;
-    position: relative;
+    
 } }
 
 
 @media (min-width: 1400px) { body{
     overflow-x: hidden;
-    position: relative;
+    
 } }
