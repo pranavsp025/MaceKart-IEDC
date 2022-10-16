@@ -249,12 +249,12 @@ header.active{
 .contact .s {
     width: 500px;
     padding: 30px;
-    position: fixed;
+    position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-0%);
     background: rgb(50, 48, 48);
-    text-align: center;
+    
     border-radius: 3rem;
     
 }
