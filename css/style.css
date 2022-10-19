@@ -470,7 +470,7 @@ header.active{
     text-align: center;
     border:.1rem solid var(--light-color);
     background:var(--white-color);
-    border-radius: .5rem;
+    border-radius: 2.5rem;
     padding:1rem;
 }
 
