@@ -245,6 +245,7 @@ header .icons a:hover{
     padding: 10px;
     font-weight: 700;
     margin-left: 30px;
+    padding-top: 30px;
 }
 .contact .s {
     width: 500px;
@@ -252,7 +253,6 @@ header .icons a:hover{
     position: relative;
     top: 50%;
     left: 50%;
-    flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
     transform: translate(-50%,-0%);
