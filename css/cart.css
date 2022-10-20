@@ -233,7 +233,8 @@ header .icons a:hover{
     color: white;
     text-transform: uppercase;
     font-weight: 700;
-    
+    padding-left: 35px;
+
 }
 .contact h2 {
     
@@ -251,6 +252,9 @@ header .icons a:hover{
     position: relative;
     top: 50%;
     left: 50%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     transform: translate(-50%,-0%);
     background: rgb(50, 48, 48);
     
