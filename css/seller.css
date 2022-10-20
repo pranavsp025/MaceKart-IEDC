@@ -253,7 +253,7 @@ header .icons a:hover{
     left: 50%;
     flex-wrap: wrap;
     
-    transform: translate(-50%,-0%);
+    transform: translate(-50%,3%);
     background: rgb(50, 48, 48);
     
     border-radius: 3rem;
