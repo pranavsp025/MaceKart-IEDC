@@ -112,7 +112,7 @@ header form{
     align-items: center;
     width: 40rem;
     border-radius: 5rem;
-    height: 5rem;
+    height: 0rem;
     background: var(--black-color);
     overflow:hidden;
 }

@@ -93,6 +93,7 @@ header{
     background: var(--white-color);
     border-bottom: .1rem solid var(--light-color);
     padding:1.5rem 9%;
+    
 }
 
 header .logo{
@@ -111,9 +112,11 @@ header form{
     align-items: center;
     width: 40rem;
     border-radius: 5rem;
-    height: 5rem;
+    height: 0rem;
     background: var(--black-color);
     overflow:hidden;
+    
+    
 }
 
 header form input{
@@ -124,6 +127,7 @@ header form input{
     color:var(--white-color);
     padding:0 2rem;
     text-transform: none;
+    
 }
 
 header form label{
@@ -131,6 +135,7 @@ header form label{
     padding-right: 2rem;
     color:var(--white-color);
     cursor: pointer;
+    
 }
 
 header form label:hover{
@@ -149,6 +154,7 @@ header .icons a{
     border-radius: 50%;
     cursor: pointer;
     margin-right: .7rem;
+    
 }
 
 header .icons div:hover,
@@ -156,6 +162,7 @@ header .icons a:hover{
     background: var(--orange);
     color:#fff;
     transform: rotate(360deg);
+    
 }
 
 header.active{
@@ -173,7 +180,7 @@ header.active{
     padding:3rem;
     width: 30rem;
     text-transform: capitalize;
-
+    
 }
 
 .navbar.active{
