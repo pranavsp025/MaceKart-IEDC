@@ -169,10 +169,10 @@ header .icons a:hover{
 
 header.active{
     position: fixed;
-    
     top:0; left: 0;
     z-index: 100;
 }
+
 
 .navbar{
     position: fixed;
@@ -675,7 +675,7 @@ header.active{
     }
 
     header.active{
-        transform: translateY(-12.5rem);
+        transform: translateY(-10rem);
     }
 
     .home .row .content{
