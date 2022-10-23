@@ -101,6 +101,7 @@ header .logo{
     font-weight: bolder;
     color:var(--black-color);
     font-size: 3rem;
+    padding-bottom: 5px;
 }
 
 header .logo span{
@@ -168,7 +169,7 @@ header .icons a:hover{
 
 header.active{
     position: fixed;
-    margin-top: 100px;
+    
     top:0; left: 0;
     z-index: 100;
 }

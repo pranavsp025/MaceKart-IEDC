@@ -101,6 +101,8 @@ header .logo{
     font-weight: bolder;
     color:var(--black-color);
     font-size: 3rem;
+    padding-bottom: 5px;
+
 }
 
 header .logo span{
