@@ -21,6 +21,6 @@
 	  text-align: left;
 	  font-size: 0;
 	  animation: 10s slidy infinite; 
-	  
+	  overflow-x: hidden;
 	}
 	
