@@ -13,7 +13,6 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
     transition:.2s linear;
 }
 
@@ -173,6 +172,8 @@ header.active{
     background: var(--white-color);
     padding:3rem;
     width: 30rem;
+    text-transform: capitalize;
+
 }
 
 .navbar.active{
@@ -241,6 +242,8 @@ header.active{
     background:var(--white-color);
     border-radius: .5rem;
     padding:1rem;
+    text-transform: capitalize;
+
 }
 
 .home .row .content{
@@ -292,6 +295,7 @@ header.active{
 .category .box-container{
     display: flex;
     gap:5rem;
+    text-transform: capitalize;
 
     
 }
@@ -326,6 +330,8 @@ header.active{
     border-radius: 2rem;
     background: var(--white-color);
     margin-right: 10px;
+    text-transform: capitalize;
+
 }
 
 .products .product-slider .slide .image{
@@ -402,6 +408,8 @@ header.active{
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
+    text-transform: capitalize;
+
 }
 
 .featured .box-container{
@@ -477,6 +485,8 @@ header.active{
     background:var(--white-color);
     border-radius: 2.5rem;
     padding:1rem;
+    text-transform: capitalize;
+
 }
 
 .deal .row .content{
@@ -530,6 +540,8 @@ header.active{
     border-radius: 2rem;
     border:.1rem solid var(--light-color);
     padding:2rem;
+    text-transform: capitalize;
+
 }
 
 .new .new-slider .slide .image{
@@ -570,8 +582,13 @@ header.active{
 
 .footer .footer-container .box-container .box{
     flex:1 1 25rem;
+   
 }
+.footer .footer-container .box-container .box.sm{
+    text-transform: lowercase;
 
+   
+}
 .footer .footer-container .box-container .box h3{
     color:var(--orange);
     font-size: 2.5rem;
