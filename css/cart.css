@@ -171,7 +171,9 @@ header .icons a:hover{
     padding:3rem;
     width: 30rem;
 }
-
+.navbar .user span{
+    color:var(--orange);
+}
 .navbar.active{
     left: 0;
     box-shadow: 0 0 0 100vw var(--light-color);
@@ -333,9 +335,7 @@ header .icons a:hover{
         overflow-x: hidden;
         
     }
-    header{
-        flex-flow: column;
-    }
+    
 
     header form{
         width:100%;
@@ -343,7 +343,7 @@ header .icons a:hover{
     }
 
     header.active{
-        transform: translateY(-12.5rem);
+        transform: translateY(-0.5rem);
     }
 
     .home .row .content{
