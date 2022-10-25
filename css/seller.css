@@ -170,6 +170,8 @@ header .icons a:hover{
     background: var(--white-color);
     padding:3rem;
     width: 30rem;
+    text-transform: capitalize;
+
 }
 
 .navbar.active{

@@ -170,6 +170,8 @@ header .icons a:hover{
     background: var(--white-color);
     padding:3rem;
     width: 30rem;
+    text-transform: capitalize;
+
 }
 .navbar .user span{
     color:var(--orange);
@@ -200,6 +202,7 @@ header .icons a:hover{
     font-weight: 500;
     font-size: 2rem;
 }
+
 
 .navbar .links a{
     display: block;
