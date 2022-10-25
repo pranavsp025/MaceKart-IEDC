@@ -675,7 +675,7 @@ header.active{
     }
 
     header.active{
-        transform: translateY(-10rem);
+        transform: translateY(-4.5rem);
     }
 
     .home .row .content{
