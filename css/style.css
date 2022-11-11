@@ -68,7 +68,11 @@ section{
     color:var(--orange);
     text-transform: uppercase;
 }
-
+.heading a {
+    font-size: small;
+    
+    padding: 10px;
+}
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -345,7 +349,7 @@ header.active{
     height: 85%;
     width: 80%;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .category .box-container .box:hover img{
