@@ -264,7 +264,7 @@ header.active{
     background:var(--white-color);
     border-radius: 2rem;
     border:0.1rem solid var(--light-color);
-    padding: 2rem;
+    padding-bottom: 2rem;
     text-transform: capitalize;
     width: 32%;
     float: left;
