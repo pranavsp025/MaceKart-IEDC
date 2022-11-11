@@ -264,7 +264,7 @@ header.active{
 .new .new-slide .slid{
     background:var(--white-color);
     border-radius: 2rem;
-    border:.1rem solid var(--light-color);
+    border:0.1rem solid var(--light-color);
     padding:2rem;
     text-transform: capitalize;
     max-width: 33%;
@@ -272,6 +272,7 @@ header.active{
    
     
 }
+
 
 .new .new-slide .slid .image{
     padding:1rem;
