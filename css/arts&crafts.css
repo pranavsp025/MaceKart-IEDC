@@ -260,40 +260,90 @@ header.active{
     color: var(--orange);
 }
 
-.new .new-slide .slid{
-    background:var(--white-color);
+.products .product-slide .slid{
+    overflow: hidden;
+    position: relative;
+    border:.1rem solid var(--light-color);
     border-radius: 2rem;
-    border:0.1rem solid var(--light-color);
-    padding:2rem;
+    background: var(--white-color);
     text-transform: capitalize;
     max-width: 32%;
-    float: left;
     margin-right: 1%;
     margin-bottom: 1%;
+    float: left;
 
 }
 
+.products .product-slide .slid .image{
+    align-items: center;
+    
+    
+}
 
-.new .new-slide .slid .image{
+.products .product-slide .slid .image img{
+    height: 30rem;
+    width: 30rem;
+    align-items: center;
+}
+
+.products .product-slide .slid .content{
     padding:1rem;
+    border-top: .1rem solid var(--light-color);
 }
 
-.new .new-slide .slid .image img{
-    height: 140%;
-    width: 100%;
-    object-fit: cover;
+.products .product-slide .slid .icons{
+    position: absolute;
+    top:0; right:-7rem;
 }
-.new .new-slide .slid .content h3{
+
+.products .product-slide .slid:hover .icons{
+    right:1rem;
+}
+
+.products .product-slide .slid .icons a{
+    height:5rem;
+    width:5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    background: var(--black-color);
+    color:var(--white-color);
+    display: block;
+    margin-top: 1rem;
+}
+
+.products .product-slide .slid .icons a:hover{
+    background:var(--orange);
+    color:#fff;
+}
+
+
+.products .product-slide .slid .content h3{
     color:var(--black-color);
     font-weight: normal;
     font-size: 2.5rem;
     padding:.5rem 0;
 }
-.new .new-slide .slid .content .price{
+
+.products .product-slide .slid .content .price{
     color:var(--orange);
     font-weight: bolder;
     font-size: 2.5rem;
     padding:.5rem 0;
+}
+
+.products .product-slide .slid .content .price span{
+    color:var(--black-color);
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+
+
+.products .gap{
+    margin-bottom: `2rem;
 }
 
 
