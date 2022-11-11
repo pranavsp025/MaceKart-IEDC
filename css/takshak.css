@@ -261,33 +261,34 @@ header.active{
     color: var(--orange);
 }
 
-.new .new-slider .slide{
+.new .new-slide .slid{
     background:var(--white-color);
     border-radius: 2rem;
     border:.1rem solid var(--light-color);
     padding:2rem;
     text-transform: capitalize;
     max-width: 33%;
-float: left;
+    float: left;
+   
     
 }
 
-.new .new-slider .slide .image{
+.new .new-slide .slid .image{
     padding:1rem;
 }
 
-.new .new-slider .slide .image img{
+.new .new-slide .slid .image img{
     height: 140%;
     width: 100%;
     object-fit: cover;
 }
-.new .new-slider .slide .content h3{
+.new .new-slide .slid .content h3{
     color:var(--black-color);
     font-weight: normal;
     font-size: 2.5rem;
     padding:.5rem 0;
 }
-.new .new-slider .slide .content .price{
+.new .new-slide .slid .content .price{
     color:var(--orange);
     font-weight: bolder;
     font-size: 2.5rem;
