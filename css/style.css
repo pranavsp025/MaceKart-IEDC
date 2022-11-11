@@ -375,7 +375,7 @@ header.active{
 
 .products .product-slider .slide .image img{
     height: 30rem;
-    width: 30rem;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -417,6 +417,7 @@ header.active{
     font-weight: normal;
     font-size: 2.5rem;
     padding:.5rem 0;
+    height: 10rem;
 }
 
 .products .product-slider .slide .content .price{
