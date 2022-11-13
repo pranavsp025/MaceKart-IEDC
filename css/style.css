@@ -478,6 +478,7 @@ header.active{
 
 .featured .box-container .box .image-container .big-image img{
     width:100%;
+    padding-left: 20%;
 }
 
 .featured .box-container .box .content{
