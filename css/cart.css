@@ -237,16 +237,17 @@ header .icons a:hover{
 
 .contact h1 {
     font-size: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-weight: 700;
     padding-left: 70px;
+    padding-bottom: 20px;
 
 }
 .contact h2 {
     
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     float: left;
     padding: 10px;
@@ -263,7 +264,7 @@ header .icons a:hover{
     display: flex;
     flex-wrap: wrap;
     transform: translate(-50%,-0%);
-    background: rgb(50, 48, 48);
+    background: rgba(235, 235, 235, 0.23);
     
     border-radius: 3rem;
     
@@ -274,19 +275,19 @@ header .icons a:hover{
     flex-shrink: initial;
     background: none;
     display: block;
-    margin: 20px 170px;
-    text-align: center;
+    margin: 15px 70px;
+    
     border: 3px solid #0367fd;
-    padding: 10px 10px;
-    width: 220px;
+    padding: 10px 20px;
+    width: 280px;
     outline: none;
-    color: white;
-    border-radius: 24px;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
     transition: 0.25px;
 }
 .contact .s input[type="text"]:focus,.contact .s input[type="email"]:focus,.contact .s input[type="tel"]:focus
 {
-    width: 240px;
+    width: 300px;
     border-color: #ffc400ec;
 }
 .contact .s button[type="submit"]{
@@ -298,8 +299,8 @@ header .icons a:hover{
     border: 3px solid #ffc400ec;
     padding: 14px 10px;
     outline: none;
-    color: white;
-    border-radius: 24px;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
     transition: 0.25px;
     cursor: pointer;
 }
