@@ -249,11 +249,11 @@ header .icons a:hover{
     font-size: 20px;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    float: left;
-    padding: 10px;
+    padding-bottom: 0.1px;
+
+    padding-left: 40px;
     font-weight: 700;
     margin-left: 30px;
-    padding-top: 30px;
 }
 .contact .s {
     width: 500px;
@@ -277,7 +277,7 @@ header .icons a:hover{
     display: block;
     margin: 15px 70px;
     
-    border: 3px solid #0367fd;
+    border: 3px solid #35363797;
     padding: 10px 20px;
     width: 280px;
     outline: none;
@@ -287,8 +287,8 @@ header .icons a:hover{
 }
 .contact .s input[type="text"]:focus,.contact .s input[type="email"]:focus,.contact .s input[type="tel"]:focus
 {
-    width: 300px;
-    border-color: #ffc400ec;
+    width: 280px;
+    border-color: #000000ec;
 }
 .contact .s button[type="submit"]{
     border: 0;

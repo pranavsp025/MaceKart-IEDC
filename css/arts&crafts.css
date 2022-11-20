@@ -275,13 +275,15 @@ header.active{
 
 
 .products .product-slide .slid .image{
-    padding:1rem;
+    padding:rem;
     width: 100%;
 }
 
 .products .product-slide .slid .image img{
     height: 25rem;
     width: 100%;
+    border-radius: 2rem;
+
     object-fit: cover;
     
 }

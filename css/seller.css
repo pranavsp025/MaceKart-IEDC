@@ -242,16 +242,26 @@ header .icons a:hover{
     padding-bottom: 20px;
 
 }
+.contact h3 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 35px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
 .contact h2 {
     
     font-size: 20px;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    float: left;
-    padding: 10px;
+    padding-bottom: 0.1px;
+    padding-left: 40px;
     font-weight: 700;
     margin-left: 30px;
-    padding-top: 30px;
+  
 }
 .contact .s {
     width: 500px;
@@ -267,6 +277,9 @@ header .icons a:hover{
     border-radius: 3rem;
     
 }
+.contact.s .des {
+   padding: 100px 20px;
+}
 .contact .s input[type="text"],.contact .s input[type="email"],.contact .s input[type="tel"],.contact .s input[type="url"]
 {
     border: 0;
@@ -275,7 +288,7 @@ header .icons a:hover{
     display: block;
     margin: 15px 70px;
     
-    border: 3px solid #0367fd;
+    border: 3px solid #35363797;
     padding: 10px 20px;
     width: 280px;
     outline: none;
@@ -283,10 +296,11 @@ header .icons a:hover{
     border-radius: 15px;
     transition: 0.25px;
 }
+
 .contact .s input[type="text"]:focus,.contact .s input[type="email"]:focus,.contact .s input[type="tel"]:focus,.contact .s input[type="url"]:focus
 {
-    width: 220px;
-    border-color: #ffc400ec;
+    width: 280px;
+    border-color: #000000ec;
 }
 .contact .s button[type="submit"]{
     border: 0;
@@ -297,7 +311,7 @@ header .icons a:hover{
     border: 3px solid #ffc400ec;
     padding: 14px 10px;
     outline: none;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 15px;
     transition: 0.25px;
     cursor: pointer;
