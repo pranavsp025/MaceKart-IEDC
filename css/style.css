@@ -430,9 +430,10 @@ header.active{
 }
 
 .products .product-slider .slide .content .price span{
-    color:var(--black-color);
+    color:gray;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    padding-right: 5px;
     text-decoration: line-through;
 }
 
