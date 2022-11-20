@@ -240,7 +240,7 @@ header .icons a:hover{
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-weight: 700;
-    padding-left: 70px;
+    padding-left: 60px;
     padding-bottom: 20px;
 
 }
@@ -296,16 +296,17 @@ header .icons a:hover{
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 3px solid #ffc400ec;
+    border: 3px solid #10a936ec;
+    background: #10a936ec;  
     padding: 14px 10px;
     outline: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border-radius: 15px;
     transition: 0.25px;
     cursor: pointer;
 }
 .contact .s button[type="submit"].hover{
-    background: #ffc400ec;
+    background: #10a936ec;  
 }
 
 
