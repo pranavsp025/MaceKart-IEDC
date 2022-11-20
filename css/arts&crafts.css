@@ -38,7 +38,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#eee;
+    background:#e0e5ec;
 }
 
 body.active{
@@ -266,7 +266,7 @@ header.active{
     border:0.1rem solid var(--light-color);
     padding-bottom: 2rem;
     text-transform: capitalize;
-    width: 32%;
+    width: 47%;
     float: left;
     margin-right: 1%;
     margin-bottom: 1%;

@@ -38,7 +38,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#eee;
+    background:#e0e5ec;
 }
 
 body.active{
@@ -382,7 +382,7 @@ header.active{
 
 .products .product-slider .slide .content{
     padding:3rem;
-    border-top: .1rem solid var(--light-color);
+    border-top: .1rem solid var(--white-color);
 }
 
 .products .product-slider .slide .icons{
