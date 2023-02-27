@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IEDCMACE Blog</title>
+    <link rel="icon" href="images/logo.png"/>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/author.css" />
+  </head>
+  <body>
+    <header>
+      
+      <a href="blog.html" class="logo"><span>IEDC</span>MACE<span> Blog</span></a>
+
+      
+
+      <div class="icons">
+        <div id="menu-bar" class="fas fa-bars"></div>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div class="user">
+        <a href="#"><img src="images/logo.png" alt=""></a> 
+        <a href="#"><h3><span>Blog</span><span></span></h3></a> 
+    </div>
+
+      <div class="links">
+        <a href="blog.html">home</a>
+        <a href="posts.html">posts</a>
+        <a href="authors.html">authors</a>
+        <a href="../index.html">macekart.</a>
+      </div>
+
+      <div id="close" class="fas fa-times"></div>
+    </nav><br>
+
+    <section class="deal" id="deal">
+
+        <h1 class="heading"><span>AUTHORS</span> </h1>
+    
+        <div class="row">
+            <div class="image">
+                <img src="images/user-img.png" alt="">
+            </div>
+            <div class="content">
+                
+                <h3 class="text">Name</h3>
+                <p>description</p>
+            </div>
+    
+            
+    
+        </div>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/user-img.png" alt="">
+            </div>
+            <div class="content">
+                
+                <h3 class="text">Name</h3>
+                <p>description</p>
+            </div>
+    
+            
+    
+        </div>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/user-img.png" alt="">
+            </div>
+            <div class="content">
+                
+                <h3 class="text">Name</h3>
+                <p>description</p>
+            </div>
+    
+            
+    
+        </div>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/user-img.png" alt="">
+            </div>
+            <div class="content">
+                
+                <h3 class="text">Name</h3>
+                <p>description</p>
+            </div>
+    
+            
+    
+        </div>
+    
+    </section>
+  
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw_YKLJDg-mPv_8ASMfmskRP3Gu9vL4NM8UFxd6COf-5lGuARgPLkpTmb64E-X2gl63/exec";
+      const form = document.forms["order_details"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      document.getElementById("check").onclick = function() {
+        let allAreFilled = true;
+        document.getElementById("myForm").querySelectorAll("[required]").forEach(function(i) {
+          if (!allAreFilled) return;
+          if (i.type === "radio") {
+            let radioValueCheck = false;
+      document.getElementById("myForm").querySelectorAll(`[name=${i.name}]`).forEach(function(r) {
+              if (r.checked) radioValueCheck = true;
+            })
+            allAreFilled = radioValueCheck;
+            return;
+          }
+          if (!i.value) { allAreFilled = false;  return; }
+        })
+        if (!allAreFilled) {
+          alert('Fill all the fields');
+        }
+        if (allAreFilled){
+          alert('Your order has been placed')
+          window.location = "tnku.html"        }
+      };
+    </script>
+    <script src="js/order.js"></script>
+
+
+  </body>
+</html>
