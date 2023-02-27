@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IEDCMACE Blog</title>
+    <link rel="icon" href="images/logo.png"/>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/post.css" />
+  </head>
+  <body>
+    <header>
+      
+      <a href="blog.html" class="logo"><span>IEDC</span>MACE<span> Blog</span></a>
+
+      
+
+      <div class="icons">
+        <div id="menu-bar" class="fas fa-bars"></div>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div class="user">
+        <a href="#"><img src="images/logo.png" alt=""></a> 
+        <a href="#"><h3><span>Blog</span><span></span></h3></a> 
+    </div>
+
+      <div class="links">
+        <a href="blog.html">home</a>
+        <a href="posts.html">posts</a>
+        <a href="authors.html">authors</a>
+        <a href="../index.html">macekart.</a>
+      </div>
+
+      <div id="close" class="fas fa-times"></div>
+    </nav><br>
+
+<section class="posts" id="posts">
+  
+    <div class="row">
+  
+        <div class="content">
+            <h3>Lorem eipsum dolor sit amet.</h3>  
+            <div class="date"><div class="fas fa-calendar-alt">dd/mm/yyyy  </div>
+  
+            <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nihil. Omnis dolores, dolore laborum rerum numquam enim atque voluptate ullam accusantium deleniti consequuntur animi laboriosam impedit suscipit iure. Quibusdam a facilis nam ipsa tempore dicta. Reprehenderit nostrum quis eius tenetur expedita perspiciatis soluta error consequatur illo odit pariatur inventore, aut maxime nihil iure incidunt, vel rem veritatis ut esse delectus. Dolor at quae modi possimus temporibus, quisquam excepturi doloribus totam maiores. Facilis temporibus ex debitis minus illum magnam, aut quos illo non quam nihil ipsa deserunt accusantium consequatur. Explicabo quidem nulla saepe non consequuntur asperiores totam ad harum a quis. lorem sit amet consectetur adipisicing elit. Nobis, optio. Suscipit quidem tempora praesentium delectus consequatur aspernatur quam blanditiis? Voluptates!</p> 
+            <center><img src="images/user-img.png" alt="img"></center>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores et placeat dolorum? Veritatis numquam, molestiae et illo possimus animi aliquam accusantium ut sapiente vitae incidunt repellat ea, nemo tempore nam maxime? Aperiam natus suscipit quidem, repudiandae voluptate, incidunt sapiente voluptatum soluta corrupti aliquid nam omnis alias vitae mollitia deleniti nulla sit impedit laborum quasi reiciendis obcaecati? Suscipit quae excepturi veniam, quos voluptas ducimus facere rerum omnis amet id laboriosam saepe autem deleniti quod asperiores nihil magni quidem sunt voluptates. Ut autem aspernatur quibusdam officiis quidem, dicta minus, expedita deserunt maxime in maiores quo voluptas sapiente explicabo illum placeat ipsa quaerat!</p>
+            <center><div class="author">
+                <h1>WRITTEN BY</h1>
+                <br>
+
+                <div class="img"><img src="images/user-img.png"  width="200" alt="img"></div>
+                <div class="name"><a href="#" >name</a></div>
+                <div class="des"><p >description</p></div>
+            </div></center>
+            
+
+            </div>
+        </div>
+    </div>
+      
+  
+  </section>
+  
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw_YKLJDg-mPv_8ASMfmskRP3Gu9vL4NM8UFxd6COf-5lGuARgPLkpTmb64E-X2gl63/exec";
+      const form = document.forms["order_details"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+      document.getElementById("check").onclick = function() {
+        let allAreFilled = true;
+        document.getElementById("myForm").querySelectorAll("[required]").forEach(function(i) {
+          if (!allAreFilled) return;
+          if (i.type === "radio") {
+            let radioValueCheck = false;
+      document.getElementById("myForm").querySelectorAll(`[name=${i.name}]`).forEach(function(r) {
+              if (r.checked) radioValueCheck = true;
+            })
+            allAreFilled = radioValueCheck;
+            return;
+          }
+          if (!i.value) { allAreFilled = false;  return; }
+        })
+        if (!allAreFilled) {
+          alert('Fill all the fields');
+        }
+        if (allAreFilled){
+          alert('Your order has been placed')
+          window.location = "tnku.html"        }
+      };
+    </script>
+    <script src="js/order.js"></script>
+
+
+  </body>
+</html>
